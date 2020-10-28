@@ -1,1 +1,0 @@
-# Evaluation du bloc Algorithme
