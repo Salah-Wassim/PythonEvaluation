@@ -23,5 +23,5 @@ for y in range(0, len(caracter)):
 
 
 for tableau in range(0, heigh):
-    print(row, end="\n")
-    print(row2)
+    print(*row, sep=" ", end="\n")
+    print(*row2, sep=" ", end="\n")
