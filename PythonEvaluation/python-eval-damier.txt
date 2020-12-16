@@ -1,0 +1,16 @@
+# DAMIER
+caracter = input("Entrez un caractère")
+heigh = int(input("Entrez un nombre de ligne"))
+space = " "
+# Creation d'un tableau
+row = []
+for tableau in range(0, 5):
+     for i in range(0, len(caracter)):
+        row.append(caracter[i])
+     for i in range(0, len(caracter)):
+        row.append(space[i])
+
+for i in range(len(row)):
+    if row[i][0] == space:
+        row[i][0] = space
+print(row, end="\n")
