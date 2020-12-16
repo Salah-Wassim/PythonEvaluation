@@ -10,7 +10,5 @@ for tableau in range(0, 5):
      for i in range(0, len(caracter)):
         row.append(space[i])
 
-for i in range(len(row)):
-    if row[i][0] == space:
-        row[i][0] = space
-print(row, end="\n")
+for j in range(0, heigh):
+    print(row, end='\n')
