@@ -4,11 +4,15 @@ heigh = int(input("Entrez un nombre de ligne"))
 space = " "
 # Creation d'un tableau
 row = []
+
 for tableau in range(0, 5):
      for i in range(0, len(caracter)):
         row.append(caracter[i])
      for i in range(0, len(caracter)):
         row.append(space[i])
+for j in range(0, len(caracter)):
+    row.append(caracter[i])
 
-for j in range(0, heigh):
-    print(row, end='\n')
+
+for tableau in range(0, heigh):
+   print(row, end="\n")
