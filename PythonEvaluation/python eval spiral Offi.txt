@@ -1,0 +1,277 @@
+# V1
+# SPIRALE
+caracter = input("Entrez un caractère")
+column = 8
+star = "*"
+row = []
+
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter[c])
+
+for height in range(0, column):
+    while 1 < height < 8:
+        for i in range(0, 9):
+            for c in range(len(caracter)):
+                row.append(star[c])
+                print(*row, end="\n")
+
+==============================================================
+# V2
+# SPIRALE
+caracter = "a"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter[c])
+
+# Creation du second tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row2.append(star[c])
+
+# Hauteur des shema a et etoiles
+for h in range(column):
+    if h == 1:
+        print(row)
+    for j in range(1 < h < 8):
+        print(row2, end="\n")
+print(row)
+
+===================================================================
+
+# V3
+# SPIRALE
+caracter = "b"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for c in range(len(star)):
+        row2.append(star)
+    if row2[0] == star:
+        row2[0] = caracter
+    else:
+        i += 1
+
+# Hauteur des shemas a et etoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+print(*row)
+
+==========================================================================
+
+# V4
+# SPIRALE
+caracter = "b"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for b in range(0 < i < 9):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shemas a et etoiles
+for h in range(column):
+    if h == 1:
+        print(row)
+    for j in range(1 < h < 8):
+        print(row2, end="\n")
+print(row)
+
+===============================================================================
+
+# V5
+# SPIRALE
+caracter = "b"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shemas a et etoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+print(*row)
+
+========================================================================
+
+# V6
+# SPIRALE
+caracter = "b"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shemas a et etoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+row[1] = " "
+print(*row)
+
+==========================================================================
+
+# V7
+# SPIRALE
+caracter = "b"
+column = 8
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shemas a et etoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(2 < h < 8):
+        for c in row2:
+            if row2[2] == star:
+                row2[2] = caracter
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+row[1] = " "
+print(*row)
+
+=====================================================================
+
+# V8
+# SPIRALE
+caracter = "b"
+column = 7
+star = "*"
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+
+
+# Hauteur des shémas a et étoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(2 < h < 4):
+        if h == 3:
+            if row[1] and row[7] == caracter:
+                row[1], row[7] = " ", " "
+            print(*row)
+    for j in range(2 < h < 8):
+        for c in row2:
+            if row2[2] == star:
+                row2[2] = caracter
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+row[1] = " "
+row[7] = caracter
+print(*row)
