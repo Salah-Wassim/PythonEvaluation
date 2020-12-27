@@ -1,0 +1,76 @@
+# PROGRAMME FULL
+
+# VARIABLE GLOBALE
+
+caracter = input("Entrez un caractère")
+
+# DAMIER
+
+heigh = int(input("Entrez un nombre de ligne"))
+space = " "
+# Creation d'un tableau
+array = []
+for tableau in range(0, 5):
+    for i in range(0, len(caracter)):
+        array.append(caracter[i])
+    for i in range(0, len(caracter)):
+        array.append(space[i])
+for j in range(0, len(caracter)):
+    array.append(caracter[i])
+
+array2 = []
+for tableau in range(0, 5):
+    for x in range(0, len(caracter)):
+        array2.append(space[i])
+    for x in range(0, len(caracter)):
+        array2.append(caracter[i])
+for y in range(0, len(caracter)):
+    array2.append(space[i])
+
+for tableau in range(0, heigh):
+    print(*array, sep=" ", end="\n")
+    print(*array2, sep=" ", end="\n")
+
+# SPIRALE
+column = 7
+star = " "
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shémas a et étoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(2 < h < 4):
+        if h == 3:
+            if row[1] and row[7] == caracter:
+                row[1], row[7] = " ", " "
+            print(*row)
+    for j in range(2 < h < 8):
+        for c in row2:
+            if row2[2] == star:
+                row2[2] = caracter
+    for j in range(1 < h < 8):
+        print(*row2, end="\n")
+row[1] = " "
+row[7] = caracter
+print(*row)
