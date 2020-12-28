@@ -1,27 +1,29 @@
 # DAMIER
+
 caracter = input("Entrez un caractère")
-heigh = int(input("Entrez un nombre de ligne"))
+heigh = int(input("Entrez une hauteur"))
+hauteurPourUnTableau = int(heigh) / 2
 space = " "
+
 # Creation d'un tableau
 row = []
 for tableau in range(0, 5):
-     for i in range(0, len(caracter)):
+    for i in range(0, len(caracter)):
         row.append(caracter[i])
-     for i in range(0, len(caracter)):
+    for i in range(0, len(caracter)):
         row.append(space[i])
 for j in range(0, len(caracter)):
     row.append(caracter[i])
 
 row2 = []
 for tableau in range(0, 5):
-     for x in range(0, len(caracter)):
+    for x in range(0, len(caracter)):
         row2.append(space[i])
-     for x in range(0, len(caracter)):
+    for x in range(0, len(caracter)):
         row2.append(caracter[i])
 for y in range(0, len(caracter)):
     row2.append(space[i])
 
-
-for tableau in range(0, heigh):
+for j in range(int(hauteurPourUnTableau)):
     print(*row, sep=" ", end="\n")
     print(*row2, sep=" ", end="\n")
