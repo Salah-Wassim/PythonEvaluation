@@ -275,3 +275,112 @@ for h in range(column):
 row[1] = " "
 row[7] = caracter
 print(*row)
+
+=========================================================================
+
+#V9
+# SPIRALE
+caracter = "A"
+column = 7
+star = " "
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shémas a et étoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(2 < h < 8):
+        print(*row2, end="\n")
+        for c in row2:
+            if row2[2] == star:
+                row2[2] = caracter
+        for c in range(3 <= h < 6):
+            if h == 3:
+                if row[1] and row[7] == caracter:
+                    row[1], row[7] = " ", " "
+                print(*row)
+            if h == 4:
+                if row[3] and row[4] and row[5] == caracter:
+                    row[3], row[4], row[5] = " ", " ", " "
+                print(*row)
+
+row[1] = " "
+row[3], row[4], row[5] = caracter, caracter, caracter
+row[7] = caracter
+
+print(*row)
+
+====================================================================
+
+#V10
+# SPIRALE
+
+caracter = "A"
+column = 7
+star = " "
+row = []
+row2 = []
+
+# Creation du premier tableau
+for i in range(0, 9):
+    for c in range(len(caracter)):
+        row.append(caracter)
+
+# Creation du second tableau
+for i in range(0, 9):
+    for j in range(1 < i < 3):
+        row2.append(" ")
+    for j in range(7 < i < 9):
+        row2.append(" ")
+    for j in range(0 < i < 7):
+        for c in range(len(star)):
+            row2.append(star)
+        if row2[0] == star:
+            row2[0] = caracter
+for i in range(1):
+    row2.append(caracter)
+
+# Hauteur des shémas a et étoiles
+for h in range(column):
+    if h == 1:
+        print(*row)
+    for j in range(2 < h < column-1):
+        print(*row2, end="\n")
+        for c in row2:
+            if row2[2] == star:
+                row2[2] = caracter
+        for c in range(3 <= h < 5):
+            if h == 3:
+                if row[1] and row[7] == caracter:
+                    row[1], row[7] = " ", " "
+                print(*row)
+            if h < 4:
+                if row[3] and row[4] and row[5] == caracter:
+                    row[3], row[4], row[5] = " ", " ", " "
+                print(*row)
+
+row[1] = " "
+row[3], row[4], row[5] = caracter, caracter, caracter
+row[7] = caracter
+print(*row)
+
